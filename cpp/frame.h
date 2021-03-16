@@ -109,13 +109,13 @@ class FrameEvent {
 
 public:
 
-    FrameEvent(string msg, FrameAttrs* pParams)
-        : msg(msg), pParams(pParams) {
+    FrameEvent(string message, FrameAttrs* pParameters)
+        : _message(message), _pParameters(pParameters) {
     }
 
-    string msg;
-    FrameAttrs* pParams;
-    void* ret;
+    string _message;
+    FrameAttrs* _pParameters;
+    void* _pReturn;
 };
 
 
