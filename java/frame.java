@@ -3,14 +3,14 @@ interface FrameState {
 }
     
 class FrameEvent {
-    FrameEvent(String message, HashMap<String,Object> params) {
-        this.message = message;
-        this.params = params;
+    FrameEvent(String message, HashMap<String,Object> parameters) {
+        this._message = message;
+        this._parameters = parameters;
     }
     
-    String message;
-    HashMap params;
-    Object ret;
+    String  _message;
+    HashMap _parameters;
+    Object  _return;
 }
     
 
