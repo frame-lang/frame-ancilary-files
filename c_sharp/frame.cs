@@ -1,12 +1,12 @@
 
 public class FrameEvent {
-	public FrameEvent(string msg, Dictionary<string,object> parameters) {
-		this.Msg = msg;
-		this.Parameters = parameters;
+	public FrameEvent(string message, Dictionary<string,object> parameters) {
+		this._message = message;
+		this._parameters = parameters;
 	}
-	public string Msg;
-	public Dictionary<string,Object> Parameters;
-	public Object Return;
+	public string _message;
+	public Dictionary<string,Object> _parameters;
+	public Object _return;
 }
 
 public delegate void FrameState(FrameEvent e);
